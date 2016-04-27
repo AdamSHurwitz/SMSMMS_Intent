@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SMSIntent</string>
+    <string name="smsmms_intent">SMS/MMS Intent</string>
+</resources>
