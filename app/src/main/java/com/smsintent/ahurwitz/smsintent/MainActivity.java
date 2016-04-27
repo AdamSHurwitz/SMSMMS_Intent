@@ -26,6 +26,10 @@ private final String LOG_TAG = MainActivity.class.getSimpleName();
     }
 
     public void composeMmsMessage(String message, Uri attachment) {
+        // ACTION_VIEW to choose between SMS/MMS apps
+        // Intent intent = new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms", "", null));
+
+        // ACTION_SENDTO to open default SMS/MMS apps
         Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("sms", "", null));
         // Intent intent = new Intent(Intent.ACTION_SENDTO);
         // intent.setType(HTTP.PLAIN_TEXT_TYPE);
